@@ -1,0 +1,272 @@
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  top: 20px;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+	
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #169B62;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #169B62;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+img {
+	border-radius: 25px;
+}
+
+.active, .dot:hover {
+  background-color: #FF883E;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.content {
+    width: 1024px;
+    margin: auto;
+    
+    
+    font-family: sans-serif; 
+    border: #169B62 10px solid;
+    box-shadow: 5px 10px 10px 5px;
+}
+.content p,h1,h2,h3 {padding-left: 5px;
+
+}
+section h3{
+    color: maroon;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #169B62;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 40px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active{
+  color: black;
+}
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 40px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #169B62;
+}
+
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #FF883E;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #FF883E;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.search {
+	padding: 10px;
+}
+
+#clock {
+	position : relative;
+	left : 20px;
+	width: 120px;
+	color: black; 
+	background: white; 
+	padding: 16px; 
+	border: solid black 2px; 
+	border-radius: 10px; 
+}
+
+input[type=text] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 100%;
+}input[type=text] {
+  width: 100px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 20%;
+}
+
+
+
+
+h1 {font-size: 2em;}
+
+a{color: maroon;
+    
+}
+a:hover{color: #169B62;}
+
+header img {float: left;
+max-width: 140px;
+min-width: 70px;
+max-height: 90px;
+}
+
+header h1{text-indent: 50px;
+font-style: italic;
+color: #169B62;
+text-shadow: #169B62;
+}
+
+header{border-bottom: #169B62 5px solid;
+    background-image: linear-gradient(white, #FF883E);
+}
+
+header h3{text-indent: 50px;}
+
+ul li{padding-bottom: 0.5em;}
+
+footer { clear: both;
+background-color: #169B62;
+padding: 15px 30px;}
+
+footer p { font-size: 0.75em;
+text-align: center;
+    color: white;
+}
+
+ul a {color: #169B62;
+font-weight: bold;}
+
+ul a:hover{color: maroon;}
+
+section{width: 600px;
+float: right;
+padding-right: 100px;}
+
+#side {
+float: left;
+width: 245px;
+
+}
+
+#side a{
+    text-decoration: none;
+}
+
+#side h2{color: maroon;}
+
+@media only screen and (max-width: 900px){
+    body{
+        max-width: 900px;
+        box-shadow: none;
+        font-size: 90%;
+    }
+}
+
+
+
+
+
+
+/*
+sidebar {
+float: right;
+width: 245px;
+}
+
+sidebar h2{color: maroon;}
+*/

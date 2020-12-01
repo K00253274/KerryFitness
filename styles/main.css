@@ -1,0 +1,60 @@
+
+.content {
+    width: 900px;
+    margin: auto;
+    
+    
+    font-family: sans-serif; 
+    border: steelblue 10px solid;
+    box-shadow: 5px 10px 10px 5px;
+}
+.content p,h1,h2,h3 {padding-left: 5px;
+
+}
+
+h1 {font-size: 2em;}
+
+a{color: maroon;
+    
+}
+a:hover{color: steelblue;}
+
+header img {float: left;}
+
+header h1{text-indent: 50px;
+font-style: italic;
+color: steelblue;
+text-shadow: steelblue;
+}
+
+header{border-bottom: steelblue 5px solid;
+    background-image: linear-gradient(white, lightsteelblue);
+}
+
+header h3{text-indent: 50px;}
+
+ul li{padding-bottom: 10px;}
+
+footer { clear: both;
+background-color: steelblue;
+padding: 15px 30px;}
+
+footer p { font-size: 0.75em;
+text-align: center;
+    color: white;
+}
+
+ul a {color: steelblue;
+font-weight: bold;}
+
+ul a:hover{color: maroon;}
+
+section{width: 600px;
+float: right;}
+
+sidebar {
+float: left;
+width: 245px;
+}
+
+sidebar h2{color: maroon;}

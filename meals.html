@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Healthy Meals!</title>
+    <link rel="icon" type="image/png" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="styles/main_rwd.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+	<script defer src="js/clock.js"></script>
+</head>
+<body>
+<div class="content">    
+<header> 
+  <a href="index.html"> <img src="images/logo.png" alt="Logo"></a>
+  <h1>KerryFitness</h1>
+    <h3>Physcial and Mental Health advice</h3>
+
+        <!--NavBar    -->
+     <div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="register.html">Register</a>
+  <a href="loginCustomer.html">Login</a>
+  <a href="bmi.html">BMI Calculator</a> 
+  <a href="meals.html">Healthy Meals</a>
+  <div class="search"><input type="text" id="search" placeholder="Search.."></div>
+</div>      
+  
+        
+        
+        
+</header>
+<main>
+   <section>
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="images/food/samon.jpg" alt="Salmon with Chive pancakes" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/food/brownbread.jpg" alt="Homemade irish brown bread" style="width:100%">
+  </div>
+	
+  <div class="mySlides fade">
+    <img src="images/food/irishstew.jpg" alt="Big dish of homemade irish stew" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+	   
+<div class="recipes">
+	   
+	<article>
+		<h3>Irish Smoked wild Irish salmon with chive pancakes</h3>
+		<ul>
+		<li>2 tbsp wholegrain mustard</li>
+		<li>100ml olive oil</li>
+		<li>juice 1 lemon</li>
+		<li>Freshly cooked Salmon</li>
+		<li>vegetable oil , to cook</li>
+		<li>6 handfuls mixed salad leaves</li>
+		</ul>
+	</article>
+		<article>
+		<h3>Irish Brown Bread</h3>
+		<ul>
+		<li>3 cups whole wheat flour</li>
+		<li>1 cup all-purpose flour</li>
+		<li>1 teaspoon baking soda</li>
+		<li>1 ¼ cups buttermilk</li>
+		<li>1 large egg (lightly beaten)</li>
+		</ul>
+	</article>
+	<article>
+		<h3>Irish Stew</h3>
+		<ul>
+		<li>1 1/4 pounds well-marbled chuck beef stew meat</li>
+		<li>3 teaspoons of salt</li>
+		<li>1 cup of Guinness extra stout</li>
+		<li>2 tablespoons tomato paste</li>
+		<li>1 tablespoon sugar</li>
+		<li>1 tablespoon sugar</li>
+		<li>1 tablespoon dried thyme</li>
+		<li>3 pounds russet potatoes, peeled, cut into 1/2-inch pieces (about 7 cups)</li>
+		<li>1 large onion, chopped (1 1/2 to 2 cups)</li>
+		</ul>
+	</article>
+	   
+	   </div>
+</section> 
+	</main> 
+       <sidebar id="side">
+	<h2>More great Websites</h2>
+<ul>
+<li><a href="https://irishheart.ie/">IrishHeart</a></li>
+<li><a href="https://spunout.ie/">Spunout</a></li>
+<li><a href="http://www.sielbleu.ie/">Sielbleu</a></li>
+</ul>	   
+<div id="clock"></div>
+		   <script>
+		   var slideIndex = 1;
+			   	showSlides(slideIndex);
+
+			   // Next/previous controls
+			   function plusSlides(n) {
+  				showSlides(slideIndex += n);
+			   	}
+
+				// Thumbnail image controls
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		}
+		   </script>
+		   
+    </sidebar>
+
+    <footer>
+    <p>K00253274 Jason O'Meara</p>
+		<p><a href="stafflogin.html">Staff Login</a></p>
+		<p><a href="mailto:kerryfitness@gmail.com">Contact Us</a></p>
+		<p id="date"></p>
+		<script>
+		n =  new Date();
+		y = n.getFullYear();
+		m = n.getMonth() + 1;
+		d = n.getDate();
+		document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+		</script>
+    </footer>
+
+	</div>
+</body>
+</html>

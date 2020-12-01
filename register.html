@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KerryFitness | Register</title>
+    <link rel="icon" type="image/png" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="styles/register/base.css">
+    <link rel="stylesheet" href="styles/register/form.css">
+
+</head>
+
+<body id="loginLanding">
+   <main class="wrapper">
+		<header id="logo">
+			<a href="index.html"> <img src="images/logosmall.png" alt="Logo"></a>
+		   <h1>Kerry Fitness</h1>
+	   </header>
+		<section id="sign">
+			<header>
+				<h2>Register for a Kerry Fitness Account</h2>
+			</header>
+			<article id="loginForm">
+				<form action="#" method="post">
+					
+					<label for="fname"><i class="fas fa-passport"></i> First Name</label>
+					
+					<input type="text" id="fname" name="fname" required>
+					
+					<label for="lname"><i class="fas fa-passport"></i> Last Name</label>
+					
+					<input type="text" id="lname" name="lname" required>
+					
+				    <label for="add1"><i class="fas fa-address-card"></i> Address line 1</label>
+					
+					<input type="text" id="add1" name="address1" required>
+					
+					<label for="add2"><i class="fas fa-address-card"></i> Address line 2</label>
+					
+					<input type="text" id="add2" name="address2" placeholder="(Optional)">
+					
+				    <label for="add3"><i class="fas fa-address-card"></i> Address line 3</label>
+					
+					<input type="text" id="add3" name="address3" placeholder="(Optional)">
+					
+					<label for="city"><i class="fas fa-city"></i> City/Town</label>
+					
+					<input type="text" id="city" name="city" required>
+					
+				    <label for="state"> County/State</label>
+					
+					<input type="text" id="state" name="county" required>
+					
+					<label for="postcode"> Eircode/Postcode</label>
+					
+					<input type="text" id="postcode" name="postcode" required>
+					
+					<label for="country"><i class="fas fa-globe-europe"></i> Country</label>
+					
+					<input type="text" id="country" name="country" required>
+
+					<label for="email"><i class="fas fa-envelope"></i> Email</label>
+
+					<input type="email" id="email" name="email" required>
+
+					<label for="password"><i class="fas fa-lock"></i> Password</label>
+					<div id="pwdWrap">
+						<input type="password" id="password" name="password" required>
+						<i class="fas fa-eye eyeIcon"></i>
+					</div>
+
+					<div>
+						<button type="submit" id="loginBtn">Register  <i class="fas fa-angle-right"></i></button>
+					</div>
+
+					<aside>
+						<p><a href="loginCustomer.html">Already have an account? Login</a><br>
+				         Problem with registration? please contact a staff member<a href="mailto:kerryfitness@gmail.com"> Here</a>.</p>
+					</aside>
+				</form>
+			</article>
+		</section>
+   </main>
+    
+    <script>
+
+        const visToggle = document.querySelector('.eyeIcon');
+
+        const input = document.querySelector('#pwdWrap input');
+        
+        var password = true;
+        
+       visToggle.addEventListener('click', function(){
+                 if(password) {
+                     input.setAttribute('type','text'); // using js dynamically changed the type attribute
+                     visToggle.classList.remove('fa-eye');
+                     visToggle.classList.add('fa-eye-slash');
+                 } else {
+                     input.setAttribute('type','password');
+                     visToggle.classList.remove('fa-eye-slash');
+                     visToggle.classList.add('fa-eye');
+                 }
+            password = !password;
+              });
+
+        
+    </script>
+</body>
+</html>
+
+
+
+
+
+

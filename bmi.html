@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KerryFitness | BMI Calculator</title>
+    <link rel="icon" type="image/png" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="styles/bmi/base.css">
+    <link rel="stylesheet" href="styles/bmi/form.css">
+
+</head>
+
+<body id="loginLanding">
+   <main class="wrapper">
+		<header id="logo">
+			<a href="index.html"> <img src="images/logosmall.png" alt="Logo"></a>
+		   <h1>BMI Calculator&nbsp;</h1>
+	   </header>
+		<section id="sign">
+			<header>
+			  <h2>Input your Height &amp; Weight below</h2>
+            </header>
+			<article id="loginForm">
+				<form action="#" method="post">
+
+					<label for="weight"><i class="fas fa-weight-hanging"></i> Weight (KG)</label>
+
+					<input type="text" id="weight" name="weight">
+
+					<label for="height"><i class="fas fa-arrows-alt-v"></i>Height (Meters)</label>
+
+						<input type="text" id="height" name="height">
+					<div>
+						<input class = "submit" type="button"  value="Calculate" onclick="bmi()"/>
+					</div>
+					<aside>
+					<h3>Your BMI is </h3>
+					<h4 id="result">result</h4>
+					</aside>
+					<aside>
+						<p>
+				         Don’t have a Kerry Fitness account? <a href="register.html">Join Now</a>.</p>
+					</aside>
+				</form>
+			</article>
+		</section>
+   </main>
+    
+    <script>
+		
+  function bmi () {
+var height = Number(document.getElementById("height").value);
+var weight = Number(document.getElementById("weight").value);
+var result = weight / (height * height);
+document.getElementById("result").innerHTML = "Your bmi score is : " + result;
+}        
+    </script>
+</body>
+</html>
+
+
+
+
+
+

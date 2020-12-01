@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kerry Fitness</title>
+    <link rel="icon" type="image/png" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="styles/main_rwd.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+	<script defer src="js/clock.js"></script>
+</head>
+<body> 
+<div class="content">
+<header> 
+  <a href="index.html"> <img src="images/logo.png" alt="Logo"></a>
+  <h1>KerryFitness</h1>
+    <h3>Physcial and Mental Health advice</h3>
+
+        <!--NavBar    -->
+     <div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="register.html">Register</a>
+  <a href="loginCustomer.html">Login</a>
+  <a href="bmi.html">BMI Calculator</a> 
+  <a href="meals.html">Healthy Meals</a>
+  <div class="search"><input type="text" id="search" placeholder="Search.."></div>
+</div>      
+  
+        
+        
+        
+</header>
+<main>
+   <section>
+<h2>Health Advice Products for Locals by Locals</h2>
+<p>Supporting our local communitys has become ever more important but how do I find the right products for me? Well at Kerry Fitness we have connections with local farmers and producers to bring you the best Kerry has to offer when it comes to sourcing hardy but healthy meals.</p>
+       <p>We also arrange weekly gym sessions and community events create an account today and be apart of the ever growing connected community of Kerry</p>
+<blockquote>10/12/20 : 2 Hour beginners session at Golds Gym<br>
+  <br>
+  11/12/20 : Mental Health awarness zoom talk with jessica<br>
+  <br>
+  15/12/20 : Yoga session in Tralee Town Park</blockquote>
+       
+<h2>Daily Tips</h2>
+      <h3>BMI</h3>
+<p>Measing and keeping track of your BMI is essential to maintaining a healthy lifestyle</p>
+       
+<h3>Take care of your Heart</h3>
+<p>Heart Desease is ever more common in our socity and its very important to have your heart in good health when going into old age</p>
+
+       <h3>Mental Health</h3>
+<p>These times can be hard right now but its important to keep healthy not just physically but mentally, Check for locall;y organized online meetings like Mass and Gym/Yoga classes and meet some new people</p>
+
+       <h3>Healthy Eating</h3>
+<p>Being stuck inside all day can have some people eating the house down but fear not we have a lovly page with healthy snack foods to munch on all day</p>
+
+
+
+
+</section> 
+<sidebar id="side"><h2>More great Websites</h2>
+<ul>
+<li><a href="https://irishheart.ie/">IrishHeart</a></li>
+<li><a href="https://spunout.ie/">Spunout</a></li>
+<li><a href="http://www.sielbleu.ie/">Sielbleu</a></li>
+</ul>	   
+<div id="clock"></div>
+		   
+    </sidebar>
+    
+  
+    
+
+    
+    <footer>
+    <p>K00253274 Jason O'Meara</p>
+		<p><a href="stafflogin.html">Staff Login</a></p>
+		<p><a href="mailto:kerryfitness@gmail.com">Contact Us</a></p>
+		<p id="date"></p>
+		<script>
+		n =  new Date();
+		y = n.getFullYear();
+		m = n.getMonth() + 1;
+		d = n.getDate();
+		document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+		</script>
+    </footer>  
+</main><br>
+ </div>    	
+</body>
+</html>
